@@ -16,6 +16,7 @@ a:hover {
   height: 200px;
   background-color: #3b5c9a;
   margin-left: 80px;
+  color: rgb(254, 254, 254);
 }
 #real .box .minibox {
   border: 1px solid black;
@@ -41,13 +42,21 @@ a:hover {
   height: 100px;
   display: flex;
   justify-content: center;
-  background-color: #6c2f30;
+  background-color: rgb(122, 60, 61);
   padding-top: 5px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 #demo .minibox:hover {
-  background-color: #3e2424;
-  border: 5px solid #783c3c;
+  background-color: rgb(75, 28, 28);
+  border: 3px solid rgb(74, 25, 25);
+}
+@media screen and (max-width: 800px) {
+  #demo .minibox {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(98, 100, 225);
+    border: 3px solid rgb(47, 68, 108);
+  }
 }
 
 #hello .minibox {
@@ -57,7 +66,27 @@ a:hover {
   border-radius: 100px;
   background-color: #cc8400;
   transition: 1s;
+  padding: 90px 0 0 90px;
 }
 #hello .minibox:hover {
   border-radius: 50px;
+}
+@media screen and (max-width: 800px) {
+  #hello .minibox {
+    width: 75px;
+    height: 75px;
+    font-size: 40px;
+    padding: 10px;
+  }
+}
+
+#happy {
+  padding: 40px 0;
+}
+#happy .minibox {
+  border: 1px solid rgb(44, 68, 157);
+  width: 200px;
+  height: 200px;
+  background-color: rgb(56, 73, 135);
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */
