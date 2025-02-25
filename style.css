@@ -10,6 +10,9 @@ a:hover {
   color: black;
 }
 
+#real {
+  padding: 40px 0;
+}
 #real .box {
   border: 2px solid black;
   width: 200px;
@@ -47,15 +50,23 @@ a:hover {
   color: rgb(255, 255, 255);
 }
 #demo .minibox:hover {
-  background-color: rgb(75, 28, 28);
-  border: 3px solid rgb(74, 25, 25);
+  background-color: rgb(96, 9, 9);
+  border: 3px solid rgb(93, 11, 11);
 }
 @media screen and (max-width: 800px) {
   #demo .minibox {
     width: 100px;
-    height: 50px;
+    height: 75px;
     background-color: rgb(98, 100, 225);
     border: 3px solid rgb(47, 68, 108);
+  }
+}
+@media screen and (max-width: 500px) {
+  #demo .minibox {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(47, 9, 9);
+    border: rgb(48, 8, 8);
   }
 }
 
@@ -68,6 +79,9 @@ a:hover {
   transition: 1s;
   padding: 90px 0 0 90px;
 }
+#hello .minibox h1 {
+  color: rgb(255, 255, 255);
+}
 #hello .minibox:hover {
   border-radius: 50px;
 }
@@ -78,15 +92,39 @@ a:hover {
     font-size: 40px;
     padding: 10px;
   }
+  #hello .minibox h1 {
+    color: rgb(255, 255, 255);
+  }
 }
 
 #happy {
   padding: 40px 0;
 }
 #happy .minibox {
+  margin: 10px;
+  padding: 30px 20px 0 15px;
   border: 1px solid rgb(44, 68, 157);
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   background-color: rgb(56, 73, 135);
-  margin-top: 10px;
+}
+#happy .minibox h1 {
+  margin: 40px 90px;
+  color: rgb(255, 255, 255);
+}
+
+#person {
+  padding: 40px 0;
+}
+#person .minibox {
+  padding: 30px 20px 0 15px;
+  border: 1px solid rgb(78, 144, 63);
+  width: 250px;
+  height: 150px;
+  background-color: rgb(69, 150, 68);
+  margin: 10px;
+}
+#person .minibox h1 {
+  color: rgb(255, 255, 255);
+  margin: 40px 90px;
 }/*# sourceMappingURL=style.css.map */
